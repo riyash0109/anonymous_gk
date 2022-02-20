@@ -1,0 +1,89 @@
+{"roaster":[
+    {
+        "name":"super league",
+        "event_date":"12-2-2022",
+        "category":"cricket match",
+        "stadium_name":"chinnaswamy stadium ",
+        "location":"bengaluru",
+        "organiser":"TATA Group",
+        "event_time":"20:00 hrs"
+
+    },
+
+    {
+        "name":"music jam",
+        "event_date":"2-2-2022",
+        "category":"concert",
+        "stadium_name":"N.modi stadium",
+        "location":"Gujrat",
+        "organiser":"Akarshan and Group",
+        "event_time":"20:00 hrs"
+
+    },
+
+    {
+        "name":"comedy before monday",
+        "event_date":"12-12-2021",
+        "category":"comedy show",
+        "stadium_name":"ch. shivaji ground ",
+        "location":"mumbai",
+        "organiser":"Akarshan and Group",
+        "event_time":"20:00 hrs"
+
+    },
+
+    {
+        "name":"Sunburn",
+        "event_date":"12-6-2022",
+        "category":"festival",
+        "stadium_name":"eden garden",
+        "location":"west bengal",
+        "organiser":"Akarshan and Group",
+        "event_time":"10:00 hrs"
+
+    },
+
+    {
+        "name":"South Night",
+        "event_date":"1-3-2022",
+        "category":"classic",
+        "stadium_name":"chinnaswamy stadium ",
+        "location":"bengaluru",
+        "organiser":"bangalore classical community",
+        "event_time":"10:00 hrs"
+
+    },
+
+    {
+        "name":"Arijit night",
+        "event_date":"12-10-2022",
+        "category":"concert",
+        "stadium_name":"wankhade stadium",
+        "location":"mumbai",
+        "organiser":"TATA Group",
+        "event_time":"20:00 hrs"
+
+    },
+
+    {
+        "name":"india vs west indies",
+        "event_date":"9-9-2022",
+        "category":"cricket match",
+        "stadium_name":"Ekana International Cricket Stadium",
+        "location":"lucknow",
+        "organiser":"BCCI",
+        "event_time":"20:00 hrs"
+
+    },
+
+    {
+        "name":"bengaluru fc vs hyderabad fc",
+        "event_date":"10-2-2022",
+        "category":"football match",
+        "stadium_name":"Greenfield International Stadium",
+        "location":"bengaluru",
+        "organiser":"IFA",
+        "event_time":"20:00 hrs"
+
+    }
+]}

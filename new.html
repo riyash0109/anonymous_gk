@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"> </script>
+
+  <link rel="stylesheet" href="signin.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  <script src="angular.min.js"></script>
+  <script src="roaster.js"></script>
+</head>
+
+<body>
+  <br>
+  <label for="rowsToBeDisplayed">Display:</label>
+  <input type="number" step="1" min="0" max="10" ng-model="rowlimit" placeholder="Number of rows to be displayed...">
+
+  <div class="dark" ng-controller="roaster_ctrl">
+
+    <h3><i class="fa fa-users"></i> Roaster List</h3>
+    <table class="styled-table">
+      <thead>
+
+        </tr>
+        <tr>
+          <th><input type="search" placeholder="Search Name" ng-model="search.name" /></th>
+          <th><input type="search" placeholder="Search event_date" ng-model="search.event_date" /></th>
+          <th><input type="search" placeholder="Search category" ng-model="search.category" /></th>
+          <th><input type="search" placeholder="Search stadium_name" ng-model="search.stadium_name" /></th>
+          <th><input type="search" placeholder="Search location" ng-model="search.location" /></th>
+          <th><input type="search" placeholder="Search organiser" ng-model="search.organiser" /></th>
+          <th><input type="search" placeholder="Search event_time" ng-model="search.event_time" /></th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Event Date</th>
+          <th>Category</th>
+          <th>Stadium Name</th>
+          <th>Location</th>
+          <th>Organizer</th>
+          <th>Event Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="stadium in r_list | filter:search |limitTo:rowlimit">
+          <td scope="row">{{stadium.name | uppercase}}</td>
+          <td>{{stadium.event_date | unit }}</td>
+          <td>{{stadium.category | lowercase | name}}</td>
+          <td>{{stadium.stadium_name | lowercase}}</td>
+          <td>{{stadium.location | lowercase}}</td>
+          <td>{{stadium.organiser | name }}</td>
+          <td>{{stadium.event_time | unit }}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
